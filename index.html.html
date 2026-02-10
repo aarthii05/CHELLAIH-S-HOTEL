@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Chellaih’s Hotel – Best Pure Veg Hotel in Pudukkottai | Brinthavanam</title>
+
+<meta name="description" content="Chellaih’s Hotel is a pure vegetarian hotel in Brinthavanam, Pudukkottai serving authentic South Indian food for 30 years. Best veg hotel in Pudukkottai for idli, dosa, meals, snacks and catering services.">
+
+<meta name="keywords" content="Chellaih’s Hotel Pudukkottai, pure veg hotel in Pudukkottai, best vegetarian hotel in Pudukkottai, veg restaurant in Brinthavanam Pudukkottai, south indian veg hotel Pudukkottai, idli dosa hotel Pudukkottai, veg meals Pudukkottai, vegetarian catering Pudukkottai">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* NEW FONT ONLY FOR HOTEL NAME */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap');
+
+body{
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:linear-gradient(180deg,#fff8e1,#e3f2fd);
+    color:#333;
+}
+
+/* ---------- HEADER ---------- */
+header{
+    background:linear-gradient(120deg,#ff6f00,#ffca28,#66bb6a,#42a5f5);
+    background-size:300% 300%;
+    animation: gradientMove 8s ease infinite;
+    color:white;
+    padding:40px 15px;
+    text-align:center;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* HOTEL NAME BIGGER + ATTRACTIVE FONT */
+header h1{
+    margin:0;
+    font-size:64px;
+    letter-spacing:2px;
+    font-family:'Playfair Display', serif;
+    text-shadow:2px 4px 8px rgba(0,0,0,0.35);
+    animation:titlePop 1.2s ease forwards;
+}
+
+@keyframes titlePop{
+    0%{transform:scale(0.7);opacity:0;}
+    100%{transform:scale(1);opacity:1;}
+}
+
+header p{
+    margin-top:8px;
+    font-size:16px;
+    animation:fadeIn 2s ease;
+}
+
+/* ---------- SECTIONS ---------- */
+section{
+    padding:35px 15px;
+    max-width:1100px;
+    margin:auto;
+    animation:sectionUp 1s ease;
+}
+
+@keyframes sectionUp{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+h2{
+    color:#ff6f00;
+    margin-bottom:15px;
+}
+
+/* ---------- ABOUT CARD ---------- */
+.about{
+    background:linear-gradient(135deg,#ffffff,#f1f8e9);
+    padding:22px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    animation:fadeCard 1.2s ease;
+}
+
+@keyframes fadeCard{
+    from{opacity:0; transform:scale(0.95);}
+    to{opacity:1; transform:scale(1);}
+}
+
+/* ---------- MENU GRID ---------- */
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
+}
+
+/* ---------- MENU CARDS ---------- */
+.menu-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+    transition:transform 0.4s, box-shadow 0.4s;
+    border-top:6px solid #ff6f00;
+    animation:cardFloat 0.9s ease;
+}
+
+@keyframes cardFloat{
+    from{opacity:0; transform:translateY(50px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+.menu-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+
+.menu-card:nth-child(2){border-top-color:#66bb6a;}
+.menu-card:nth-child(3){border-top-color:#42a5f5;}
+.menu-card:nth-child(4){border-top-color:#ab47bc;}
+.menu-card:nth-child(5){border-top-color:#ef5350;}
+
+.menu-card img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+    transition:transform 0.6s;
+}
+
+.menu-card:hover img{
+    transform:scale(1.1);
+}
+
+.menu-card h3{
+    margin:12px;
+    color:#2e7d32;
+    font-size:20px;
+}
+
+.menu-card ul{
+    list-style:none;
+    padding:0 15px 18px 15px;
+    margin:0;
+}
+
+.menu-card li{
+    padding:5px 0;
+    font-size:14px;
+}
+
+/* ---------- HIGHLIGHT SECTION ---------- */
+.highlight{
+    background:linear-gradient(135deg,#fff3e0,#e1f5fe);
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 10px 22px rgba(0,0,0,0.12);
+    animation:fadeCard 1.2s ease;
+}
+
+/* ---------- CONTACT ---------- */
+.contact{
+    background:linear-gradient(120deg,#1b5e20,#43a047,#66bb6a);
+    color:white;
+    padding:35px 15px;
+    text-align:center;
+    animation:fadeIn 1.5s ease;
+}
+
+.contact h2{
+    color:#fffde7;
+}
+
+.contact p{
+    margin:8px 0;
+    font-size:15px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer{
+    text-align:center;
+    padding:12px;
+    font-size:13px;
+    background:linear-gradient(90deg,#ff6f00,#43a047,#1e88e5);
+    color:white;
+}
+
+b{
+    color:#e65100;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chellaih's Hotel</h1>
+    <p>Pure Vegetarian | Authentic Taste for 30 Years</p>
+    <p>Brinthavanam, Pudukkottai, Tamil Nadu</p>
+</header>
+
+<section>
+    <div class="about">
+        <h2>About Our Hotel</h2>
+        <p>
+            Chellaih’s Hotel has been serving delicious and authentic vegetarian food in
+            Brinthavanam, Pudukkottai for more than <strong>30 years</strong>.
+            We are well known for our tasty homemade style cooking, hygienic preparation
+            and friendly service.
+        </p>
+        <p>
+            We serve the best vegetarian food with traditional recipes.
+            Our food taste is loved by all age groups – students, families, office workers and travellers.
+        </p>
+    </div>
+</section>
+
+<section>
+<h2>Our Menu</h2>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<img src="https://thumbs.dreamstime.com/z/south-indian-breakfast-idli-dosa-chutney-indian-breakfast-lentil-rice-pancake-also-known-as-dosa-dumplings-known-as-idli-158574513.jpg" alt="Breakfast">
+<h3>Breakfast</h3>
+<ul>
+<li>Idly – ₹10</li>
+<li>Plain Dosa – ₹50</li>
+<li>Onion Dosa – ₹60</li>
+<li>Ghee Roast – ₹60</li>
+<li>Podi Dosa – ₹60</li>
+<li>Pongal – ₹50</li>
+<li>Poori Set – ₹30</li>
+<li><b>Served with Sambar & 3 Chutneys</b></li>
+<li>Coconut Chutney, Tomato Chutney, Green Chutney</li>
+</ul>
+</div>
+
+<div class="menu-card">
+<img src="https://as1.ftcdn.net/jpg/11/07/77/80/1000_F_1107778011_lWpJDdyIMAUUiyLk0cLPkLWdu4PNmkGM.jpg" alt="Lunch">
+<h3>Lunch</h3>
+<ul>
+<li>Veg Meals – ₹100</li>
+<li>Tomato Rice – ₹50</li>
+<li>Curd Rice – ₹50</li>
+<li>Parotta Set – ₹40</li>
+</ul>
+</div>
+
+<div class="menu-card">
+<img src="https://i.ndtvimg.com/i/2015-06/parotta_625x350_71434518592.jpg" alt="Dinner">
+<h3>Dinner</h3>
+<ul>
+<li>Idly – ₹10</li>
+<li>All Breakfast Dosa varieties available</li>
+<li>Parotta Set – ₹40</li>
+<li>Chapathi Set – ₹40</li>
+<li>Served with White Kurma & Spicy Kurma</li>
+</ul>
+</div>
+
+<div class="menu-card">
+<img src="https://static.vecteezy.com/system/resources/previews/013/754/794/large_2x/south-indian-filter-coffee-served-in-a-traditional-brass-or-stainless-steel-cup-free-photo.jpg" alt="Drinks">
+<h3>Drinks</h3>
+<ul>
+<li>Tea – ₹12</li>
+<li>Coffee – ₹20</li>
+<li>Milk – ₹12</li>
+<li>Horlicks – ₹15</li>
+<li>Boost – ₹15</li>
+<li>Jaggery Milk – ₹15</li>
+<li>Sukku Tea – ₹15</li>
+</ul>
+</div>
+
+<div class="menu-card">
+<img src="https://th.bing.com/th/id/OIP.cQFoD7QMGCxpV9bmKrjKVgHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Snacks">
+<h3>Snacks</h3>
+<ul>
+<li>Vada – ₹10</li>
+<li>Keera Vada – ₹10</li>
+<li>Bonda – ₹10</li>
+<li>Bajji – ₹10</li>
+<li>Pakoda – ₹10</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="highlight">
+<h2>Why Choose Chellaih’s Hotel?</h2>
+<ul>
+<li>✔ 30 years of trusted service</li>
+<li>✔ 100% Pure vegetarian food</li>
+<li>✔ Authentic traditional taste</li>
+<li>✔ Suitable for all types of audience</li>
+<li>✔ Hygienic and affordable pricing</li>
+<li>✔ Best veg food in Brinthavanam, Pudukkottai</li>
+</ul>
+</div>
+</section>
+
+<section>
+<div class="about">
+<h2>Catering Service</h2>
+<p>
+We also provide food catering service for functions and events.
+Catering is available only for <strong>pre-ordered customers</strong>.
+Please contact us in advance for booking.
+</p>
+</div>
+</section>
+
+<div class="contact">
+<h2>Contact Us</h2>
+<p><b>Phone:</b> 8973126207</p>
+<p><b>Address:</b> Brinthavanam, Pudukkottai, Tamil Nadu – 622001</p>
+<p><b>Operating Hours:</b> 6:00 AM – 10:00 PM</p>
+</div>
+
+<div class="footer">
+© Chellaih's Hotel – Brinthavanam, Pudukkottai
+</div>
+
+</body>
+</html>
